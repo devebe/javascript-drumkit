@@ -1,15 +1,15 @@
 * {
     -webkit-appearance: none;
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'Familjen Grotesk', Arial, sans-serif;
     font-size: 0.875rem;
     line-height: 1.5rem;
-    font-weight: 200;
-    color: #dcdcdc;
+    font-weight: 400;
+    color: #959595;
     margin: 0px;
     padding: 0px;
 }
 
-h1 {
+h1, h2 {
     font-size: 2.5rem;
     line-height: 3rem;
     font-weight: 400;
@@ -17,11 +17,13 @@ h1 {
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 4rem;
     height: 100vh;
     width: 100vw;
-    background-color: #a84242;
+    background-color: #4d4bb7;
 }
 
 .keys {
@@ -31,10 +33,12 @@ h1 {
     justify-content: center;
     align-items: center;
     padding: 3rem;
-    background-color: #1e1e1e;
-    border-radius: 2rem;
-    border: 1px solid #2e2e2e;
-    box-shadow: 0.5rem 0.5rem 1rem #00000090;
+    background-color: #424242;
+    border-radius: 1.5rem;
+    border: 2px solid #2e2e2e;
+    border-left: 2px solid #505050;
+    border-top: 2px solid #737373;
+    box-shadow: 0.5rem 1rem 0.5rem #00000050, 1rem 2rem 2rem #00000080;
     margin: 0 4rem;
 }
 
@@ -45,22 +49,24 @@ h1 {
     justify-content: center;
     gap: 0.5rem;
     background-color: #1e1e1e;
-    border: 2px solid #737373;
+    border: 2px solid #2e2e2e;
+    border-left: 2px solid #505050;
+    border-top: 2px solid #737373;
     border-radius: 0.5rem;
     height: 92px;
     width: 92px;
-    box-shadow: 0 0 1rem #000000;
+    box-shadow: 0.25rem 0.5rem 1rem #000000;
     transition: all 0.1s;
     flex: 0 0 auto;
 }
 
 .playing {
-    border: 2px solid #64fc64;
-    transform:scale(0.95);
-    box-shadow: 0 0 2rem #64fc6480;
+    border: 2px solid #34ffe1;
+    transform:scale(0.96);
+    box-shadow: 0 0 2rem #34ffe180;
 }
 
-.playing > h1 {
+.playing > h2 {
     color: #ffffff;
     font-weight: 800;
     text-shadow: #ffffff80;
@@ -68,6 +74,12 @@ h1 {
 
 .playing > p {
     color: #ffffff;
-    font-weight: 800;
+    font-weight: 400;
     text-shadow: #ffffff80;
+}
+
+.text {
+    color: #9796e5;
+    font-weight: 800;
+    text-transform: uppercase;
 }
