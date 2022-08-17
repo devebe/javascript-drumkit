@@ -7,9 +7,10 @@ window.addEventListener('keydown', function(e) {
     key.classList.add('playing');
 });
 
-function removeEffect() {
-    console.log(e);
-};
 
-const keys = document.querySelectorAll('key');
-keys.forEach(key => key.addEventListener('transitionemd', removeEffect));
+const keys = document.querySelectorAll('.key');
+keys.forEach(key => key.addEventListener('transitionend', function(e) {
+    if (e.propertyName !== 'transform') return;
+    this.classList.remove('playing');
+}));
+ 
