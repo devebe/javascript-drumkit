@@ -4,7 +4,7 @@
     font-size: 0.875rem;
     line-height: 1.5rem;
     font-weight: 200;
-    color: #b9b9b9;
+    color: #909090;
     margin: 0px;
     padding: 0px;
 }
@@ -44,5 +44,16 @@ h1 {
 .playing {
     border: 2px solid #64fc64;
     transform:scale(0.96);
-    box-shadow: 0 0 24px #64fc6450;
+    box-shadow: 0 0 80px #64fc6480;
+}
+
+.playing > h1 {
+    color: #ffffff;
+    font-weight: 800;
+    text-shadow: #ffffff80;
+}
+
+.playing > p {
+    color: #ffffff;
+    text-shadow: #ffffff80;
 }
