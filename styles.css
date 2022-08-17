@@ -38,11 +38,11 @@ h1 {
     height: 92px;
     width: 92px;
     box-shadow: 0 0 16px #000000;
-    transition: 0.05s;
+    transition: all 1.05s;
 }
 
 .playing {
     border: 2px solid #64fc64;
-    scale: 0.96;
-    box-shadow: 0 0 24px #64fc64;
+    transform:scale(0.96);
+    box-shadow: 0 0 24px #64fc6450;
 }

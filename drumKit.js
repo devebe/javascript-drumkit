@@ -7,9 +7,9 @@ window.addEventListener('keydown', function(e) {
     key.classList.add('playing');
 });
 
-function removeTransition(e) {
+function removeEffect() {
     console.log(e);
-}
+};
 
 const keys = document.querySelectorAll('key');
-keys.forEach(key => key.addEventListener('transitionend',removeTransition));
+keys.forEach(key => key.addEventListener('transitionemd', removeEffect));
